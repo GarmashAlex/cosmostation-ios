@@ -118,7 +118,7 @@ struct Tendermint_Types_EvidenceParams {
   ///
   /// It should correspond with an app's "unbonding period" or other similar
   /// mechanism for handling [Nothing-At-Stake
-  /// attacks](https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ#what-is-the-nothing-at-stake-problem-and-how-can-it-be-fixed).
+  /// attacks](https://ethereum.org/developers/docs/consensus-mechanisms/pos/faqs/#what-is-the-nothing-at-stake-problem).
   var maxAgeDuration: SwiftProtobuf.Google_Protobuf_Duration {
     get {return _maxAgeDuration ?? SwiftProtobuf.Google_Protobuf_Duration()}
     set {_maxAgeDuration = newValue}
